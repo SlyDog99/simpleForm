@@ -14,9 +14,9 @@
     </head>
     <%
         int hoursWorked = Integer.parseInt(request.getParameter("hours"));
-        String hourlyPay = request.getParameter("pay");
-        String preTaxDeduct = request.getParameter("pre");
-        String postTaxDeduct = request.getParameter("post");
+        int hourlyPay = Integer.parseInt(request.getParameter("pay"));
+        int preTaxDeduct = Integer.parseInt (request.getParameter("pre"));
+        int postTaxDeduct = Integer.parseInt (request.getParameter("post"));
         %>
     <body>
         <h1>Salary Info</h1>
